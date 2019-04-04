@@ -20,7 +20,7 @@ echo "mirrorsNumber:$mirrorArrayLen maxParallelDownload:$maxParallelDownload max
 mirrorArray=( $(shuf -e "${mirrorArray[@]}") )
 
 #now get the list of stuff to update
-readarray -t packageList < <(checkupdates | cut -d ' ' -f 1,4)
+#readarray -t packageList < <(checkupdates | cut -d ' ' -f 1,4)
 
 pidToWait=''
 mirrorIndex=0
